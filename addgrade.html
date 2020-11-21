@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Enter student grade</h3>
+
+<input type="text" id="name" value="student Name">
+<input type="text" id="grade" value="student Grade">
+
+
+<button onclick="myFunction()">Submit</button>
+
+<p id="a"></p>
+ <p id="b"></p>
+
+<script>
+function myFunction() {
+  var name = document.getElementById("name").value;
+  const grade = document.getElementById("grade").value;
+  if (typeof grade === "string") {
+        alert("Grade Submitted.");
+       document.getElementById("a").innerHTML = name;
+       document.getElementById("b").innerHTML = grade;
+    } else {
+        alert("Can't Submitted number")
+    }
+  
+}
+</script>
+
+</body>
+</html>
